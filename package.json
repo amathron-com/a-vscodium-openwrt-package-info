@@ -1,0 +1,67 @@
+{
+  "name": "openwrt-package-info",
+  "displayName": "OpenWRT Package Info",
+  "description": "Show OpenWRT package descriptions",
+  "version": "1.0.0",
+  "publisher": "Amathron",
+  "author": {
+    "name": "Max Grass",
+    "url": "https://amathron.com"
+  },
+  "icon": "./amathron.showOpenWrtPackageDescription.png",
+  "funding": "https://github.com/sponsors/maxwowpow",
+  "galleryBanner": {
+    "color": "#306998",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "openwrt",
+    "package",
+    "info",
+    "description"
+  ],
+  "extensionKind": [
+    "ui",
+    "workspace"
+  ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true
+    }
+  },
+  "homepage": "https://github.com/amathron-com/a-vscodium-openwrt-package-info/blob/master/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amathron-com/a-vscodium-openwrt-package-info.git"
+  },
+  "bugs": {
+    "url": "https://github.com/amathron-com/a-vscodium-openwrt-package-info/issues"
+  },
+  "main": "./main.js",
+  "activationEvents": [
+    "onCommand:amathron.showOpenWrtPackageDescription"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "amathron.showOpenWrtPackageDescription",
+        "title": "Show OpenWRT Package Info"
+      }
+    ]
+  },
+  "scripts": {
+  },
+  "devDependencies": {
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.12"
+  },
+  "license": "MIT"
+}
